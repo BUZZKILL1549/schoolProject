@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import ttk
+import os
 
 import mysql_connection.mysqlConnection as mysqlConnection
 import homePage as homePage
@@ -14,8 +15,8 @@ def tryLogin():
         passReport.configure(text="Try Again")
 
 def openHomePage():
-    root.withdraw()  
-    homePage.home()  
+    root.withdraw()
+    homePage.home()
 
 if __name__ == "__main__":
     root = Tk()

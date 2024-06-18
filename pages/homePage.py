@@ -33,7 +33,6 @@ def home():
 
     homePage.mainloop()
 
-
 if __name__ == "__main__":
     homePage = Tk()
     homePage.title("Home Page")
