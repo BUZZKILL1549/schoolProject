@@ -22,13 +22,3 @@ But I ran into some issues that led me to not being able to complete it in the
 required time. I also have some project constraints that insist that I must only
 use Python and its modules and MySQL. It's unfortunate, but I think it still
 works as a good concept.
-
-# Project structure
-This project will be divided into two branches:
-- metal
-- web
-
-Initially, the 'metal' branch will contain code in Python. However, I eventually plan to
-completely port the application into Flutter/Dart, at which time, I will make another
-branch named 'legacy' and move all the code in Python over there, while the
-Dart code will be present in the 'metal' branch.
