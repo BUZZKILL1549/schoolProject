@@ -7,7 +7,7 @@ def announcements():
     announcementsRetriever = mysqlConnection.retrieveAnnouncements()
 
     announcementsPage = Toplevel()
-    annonucementsPage.title("Announcements")
+    announcementsPage.title("Announcements")
 
     appBarFrame = ttk.Frame(announcementsPage)
     appBarFrame.pack()
