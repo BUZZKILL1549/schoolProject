@@ -22,13 +22,13 @@ def home():
     announcementButton = ttk.Button(homeFrame, text = "Announcements", command = announcementsPage.announcements)
     announcementButton.grid(row = 1, column = 0, padx = 10, pady = 20)
 
-    assignmentsButton = ttk.Button(homeFrame, text = "Assignments", )#command = lambda: assignmentsPage.assignments)
+    assignmentsButton = ttk.Button(homeFrame, text = "Assignments", command = assignmentsPage.assignments)
     assignmentsButton.grid(row = 1, column = 2, padx = 10, pady = 20)
 
-    classDiaryButton = ttk.Button(homeFrame, text = "Class Diary", )#command = lambda: classDiaryPage.classDiaryPage)
+    classDiaryButton = ttk.Button(homeFrame, text = "Class Diary", command = classDiaryPage.classDiary)
     classDiaryButton.grid(row = 1, column = 1, padx = 10, pady = 20)
 
-    parentConcernButton = ttk.Button(homeFrame, text = "Parent Concern",)# command = lambda: parentConcernPage.parentConcernPage)
+    parentConcernButton = ttk.Button(homeFrame, text = "Parent Concern", command = parentConcernPage.parentConcern)
     parentConcernButton.grid(row = 2, column = 1, padx = 10, pady = 30, sticky = E)
 
     homePage.mainloop()

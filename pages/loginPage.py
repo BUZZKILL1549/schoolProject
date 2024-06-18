@@ -1,8 +1,8 @@
 from tkinter import *
 from tkinter import ttk
 
-import pages.mysql_connection.mysqlConnection as mysqlConnection
-import pages.homePage as homePage
+import mysql_connection.mysqlConnection as mysqlConnection
+import homePage as homePage
 
 def tryLogin():
     username = nameEntry.get()

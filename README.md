@@ -32,3 +32,12 @@ Initially, the 'metal' branch will contain code in Python. However, I eventually
 completely port the application into Flutter/Dart, at which time, I will make another
 branch named 'legacy' and move all the code in Python over there, while the
 Dart code will be present in the 'metal' branch.
+
+# Installation instructions
+This project has the following requirements:
+- mysql-connector-python==8.4.0
+
+The required module may be installed manually through pip or through the following command:
+~~~
+pip install -r requirements.txt
+~~~
