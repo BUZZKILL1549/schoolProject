@@ -23,12 +23,11 @@ required time. I also have some project constraints that insist that I must only
 use Python and its modules and MySQL. It's unfortunate, but I think it still
 works as a good concept.
 
-# Project structure
-This project will be divided into two branches:
-- metal
-- web
+# Project requirements
+This project has the following requirements:
+- mysql-connector-python==8.4.0
 
-Initially, the 'metal' branch will contain code in Python. However, I eventually plan to
-completely port the application into Flutter/Dart, at which time, I will make another
-branch named 'legacy' and move all the code in Python over there, while the
-Dart code will be present in the 'metal' branch.
+They can be installed manually or through the following command while run from the main folder:
+~~~
+pip install -r requirements.txt
+~~~
