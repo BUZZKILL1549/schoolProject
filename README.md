@@ -26,8 +26,20 @@ works as a good concept.
 # Project requirements
 This project has the following requirements:
 - mysql-connector-python==8.4.0
+- MySQL database details file
 
 They can be installed manually or through the following command while run from the main folder:
+
+### mysql-connector-python==8.4.0:
 ~~~
 pip install -r requirements.txt
 ~~~
+
+### MySQL database details file:
+From MySQL Workbench, open:
+~~~
+initializeDatabase.sql
+~~~
+This script is present in the root directory of the project.
+
+Run the script in MySQL Workbench to create the database and tables.
