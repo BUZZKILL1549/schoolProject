@@ -1,7 +1,5 @@
 from tkinter import *
 from tkinter import ttk
-import os
-
 import mysql_connection.mysqlConnection as mysqlConnection
 import homePage as homePage
 
@@ -16,7 +14,7 @@ def tryLogin():
 
 def openHomePage():
     root.withdraw()
-    homePage.home()
+    homePage.home(root)
 
 if __name__ == "__main__":
     root = Tk()

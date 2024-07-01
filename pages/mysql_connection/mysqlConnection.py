@@ -17,24 +17,6 @@ def login(name: str, pwd: str) -> bool:
             if row[2] == pwd:
                 return True
 
-def retrieveAnnouncements() -> list[tuple]:
-    cursor.execute("SELECT * FROM announcements")
-    announcementsRetriever = cursor.fetchall()
-
-    return announcementsRetriever
-
-def retrieveAssignments() -> list[tuple]:
-    cursor.execute("SELECT * FROM assignments")
-    assignmentsRetriever = cursor.fetchall()
-
-    return assignmentsRetriever
-
-def retrieveClassDiary() -> list[tuple]:
-    cursor.execute("SELECT * FROM class_diary")
-    classDiaryRetriever = cursor.fetchall()
-
-    return classDiaryRetriever
-
 def sendConcern(subject: str, description: str) -> None:
     query = f'''INSERT INTO parent_concern (Subject, Description) VALUES (%s, %s);'''
     values = (subject, description)
@@ -44,4 +26,3 @@ def sendConcern(subject: str, description: str) -> None:
         cnx.commit()
     except mysql.connector.Error as error:
         print("Failed to insert into MySQL table: {}".format(error))
-    
