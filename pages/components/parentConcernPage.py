@@ -1,6 +1,5 @@
 from tkinter import *
 from tkinter import ttk
-
 import mysql_connection.mysqlConnection as mysqlConnection
 
 def send() -> bool:
