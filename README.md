@@ -28,8 +28,15 @@ This project has the following requirements:
 - mysql-connector-python==8.4.0
 - MySQL database details file
 
-They can be installed manually or through the following command while run from the main folder:
+They can be installed in two ways:
+## Automatic setup using the automate.ps1 file:
+Run the following command in Powershell:
+~~~
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\automate.ps1
+~~~
 
+## Manual setup:
 ### mysql-connector-python==8.4.0:
 ~~~
 pip install -r requirements.txt
