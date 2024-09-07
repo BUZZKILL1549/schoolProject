@@ -2,7 +2,9 @@ from tkinter import *
 from tkinter import ttk
 import mysql_connection.mysqlConnection as mysqlConnection
 
-def send() -> bool:
+
+def parentConcern(root):
+    def send() -> bool:
         try:
             subject = subjectEntry.get()
             description = descriptionEntry.get("1.0", END)
@@ -13,8 +15,7 @@ def send() -> bool:
         except:
             success.configure(text = "Our services do not currently work. Please try later.")
 
-def parentConcern():
-    parentConcernPage = Toplevel()
+    parentConcernPage = Toplevel(root)
     parentConcernPage.title("Parent Concern")
 
     # Appbar area

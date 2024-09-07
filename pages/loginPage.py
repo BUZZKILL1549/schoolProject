@@ -13,8 +13,8 @@ def tryLogin():
         passReport.configure(text="Try Again")
 
 def openHomePage():
-    root.withdraw()
-    homePage.home(root)
+    root.destroy()
+    homePage.home()
 
 if __name__ == "__main__":
     root = Tk()
